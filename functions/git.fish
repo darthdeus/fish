@@ -6,6 +6,10 @@ function d
   git diff $argv
 end
 
+function gd
+  d $argv
+end
+
 function gdc
   d --cached
 end
