@@ -3,35 +3,39 @@ function s
 end
 
 function d
-  git diff
+  git diff $argv
+end
+
+function gdc
+  d --cached
 end
 
 function gf
-  git fetch
+  git fetch $argv
 end
 
 function gst
-  git stash
+  git stash $argv
 end
 
 function grb
-  git rebase
+  git rebase $argv
 end
 
 function gco
-  git checkout
+  git checkout $argv
 end
 
 function gb
-  git branch
+  git branch $argv
 end
 
 function gc
-  git commit
+  git commit $argv
 end
 
 function ga
-  git add
+  git add $argv
 end
 
 function gau
@@ -39,15 +43,21 @@ function gau
 end
 
 function glog
-  git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"
+  git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" $argv
 end
 
 function gl
-  # glog --graph
-  git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" --graph
+  glog --graph $argv
+end
+
+function gr
+  git reset
+end
+
+function grh
+  git reset --hard
 end
 
 function gla
-  # gl --all
-  git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" --graph --all
+  gl --$ll $argv
 end
