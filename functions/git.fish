@@ -69,3 +69,15 @@ end
 function gp
   git push $argv
 end
+
+function gup
+  git smart-pull
+end
+
+function gap
+  git add -p
+end
+
+function gcam
+  git commit --amend
+end
