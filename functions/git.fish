@@ -58,6 +58,10 @@ function grh
   git reset --hard
 end
 
+function grv
+  git remote -v
+end
+
 function gla
   gl --$ll $argv
 end
