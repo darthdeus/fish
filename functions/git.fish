@@ -65,3 +65,7 @@ end
 function gla
   gl --$ll $argv
 end
+
+function gp
+  git push $argv
+end
