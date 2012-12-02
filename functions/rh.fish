@@ -1,3 +1,3 @@
 function rh
-  rbenv rehash
+  command rbenv rehash
 end

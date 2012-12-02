@@ -1,3 +1,3 @@
 function rs
-  rspec spec
+  command rspec spec
 end

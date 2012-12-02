@@ -1,9 +1,13 @@
+function g
+  command git $argv
+end
+
 function s
-  git status -sb
+  g status -sb
 end
 
 function d
-  git diff $argv
+  g diff $argv
 end
 
 function gd
@@ -15,39 +19,39 @@ function gdc
 end
 
 function gf
-  git fetch $argv
+  g fetch $argv
 end
 
 function gst
-  git stash $argv
+  g stash $argv
 end
 
 function grb
-  git rebase $argv
+  g rebase $argv
 end
 
 function gco
-  git checkout $argv
+  g checkout $argv
 end
 
 function gb
-  git branch $argv
+  g branch $argv
 end
 
 function gc
-  git commit $argv
+  g commit $argv
 end
 
 function ga
-  git add $argv
+  g add $argv
 end
 
 function gau
-  git add -u
+  g add -u
 end
 
 function glog
-  git log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" $argv
+  g log --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" $argv
 end
 
 function gl
@@ -55,15 +59,15 @@ function gl
 end
 
 function gr
-  git reset
+  g reset
 end
 
 function grh
-  git reset --hard
+  g reset --hard
 end
 
 function grv
-  git remote -v
+  g remote -v
 end
 
 function gla
@@ -71,17 +75,17 @@ function gla
 end
 
 function gp
-  git push $argv
+  g push $argv
 end
 
 function gup
-  git smart-pull
+  g smart-pull
 end
 
 function gap
-  git add -p
+  g add -p
 end
 
 function gcam
-  git commit --amend
+  g commit --amend
 end

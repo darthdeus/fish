@@ -6,10 +6,10 @@ function z --description 'Start zeus or run command'
 
   if test (count $argv) = 0
     if not test -f zeus.json
-      zeus init
+      command zeus init
     end
-    zeus start
+    command zeus start
   else
-    zeus $argv
+    command zeus $argv
   end
 end
