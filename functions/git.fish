@@ -67,7 +67,7 @@ function grv
 end
 
 function gla
-  gl --$ll $argv
+  gl --all $argv
 end
 
 function gp
