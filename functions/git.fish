@@ -67,7 +67,7 @@ function grv
 end
 
 function gla
-  gl --$ll $argv
+  gl --all $argv
 end
 
 function gp
@@ -84,4 +84,12 @@ end
 
 function gcam
   git commit --amend
+end
+
+function gm
+  git merge --no-ff $argv
+end
+
+function gmf
+  git merge --ff-only $argv
 end
