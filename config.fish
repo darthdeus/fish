@@ -5,6 +5,9 @@ set -x PATH $HOME/.rbenv/shims $PATH
 
 set -xg EDITOR vim
 
+set -x GOROOT /usr/local/opt/go
+set -x GOPATH $HOME/.go/
+
 rbenv rehash >/dev/null ^&1
 
 function g    ; git $argv             ; end
