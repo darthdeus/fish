@@ -1,4 +1,4 @@
-set -x PATH /usr/local/opt/rbenv/bin usr/local/bin /usr/local/sbin /usr/local/share/npm/bin/ $PATH
+set -x PATH /usr/local/opt/rbenv/bin /usr/local/bin /usr/local/sbin /usr/local/share/npm/bin/ $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
 
 set -xg EDITOR vim
