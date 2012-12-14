@@ -1,12 +1,14 @@
 set -x PATH /usr/local/opt/rbenv/bin /usr/local/bin /usr/local/sbin /usr/local/share/npm/bin/ $PATH
-set -x PATH $HOME/.rbenv/shims $PATH
-
+set -xg PATH $HOME/.rbenv/shims $PATH
 set -xg EDITOR vim
 
-set -x GOROOT /usr/local/opt/go
-set -x GOPATH $HOME/.go/
+set -xg GOROOT /usr/local/opt/go
+set -xg GOPATH $HOME/.go/
+
+set -xg fish_pager_color_description 555 yellow
 
 rbenv rehash >/dev/null ^&1
+
 
 function g    ; git $argv                   ; end
 function s    ; git status -sb              ; end
