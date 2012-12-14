@@ -34,6 +34,9 @@ function gm   ; git merge --no-ff $argv     ; end
 function gmf  ; git merge --ff-only $argv   ; end
 function gch  ; git cherry-pick $argv       ; end
 
+
+complete -f -c gco -a "(git branch | tr -s ' ' | cut -d ' ' -f 2)"
+
 # log
 function gl   ; glog --graph $argv ; end
 function glog
