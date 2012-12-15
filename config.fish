@@ -9,7 +9,6 @@ set -xg fish_pager_color_description 555 yellow
 
 rbenv rehash >/dev/null ^&1
 
-
 function g    ; git $argv                   ; end
 function s    ; git status -sb              ; end
 function d    ; git diff $argv              ; end
@@ -33,7 +32,6 @@ function gcam ; git commit --amend          ; end
 function gm   ; git merge --no-ff $argv     ; end
 function gmf  ; git merge --ff-only $argv   ; end
 function gch  ; git cherry-pick $argv       ; end
-
 
 complete -f -c gco -a "(git branch | tr -s ' ' | cut -d ' ' -f 2)"
 
