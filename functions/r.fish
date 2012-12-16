@@ -1,3 +1,3 @@
 function r
-  rails $argv
+  command rails $argv
 end

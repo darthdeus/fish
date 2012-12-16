@@ -1,7 +1,15 @@
-function rake
+function __bundle_aware_rake
   if test -f Gemfile
-    bundle exec ruby -S rake $argv
+    command bundle exec rake $argv
   else
-    ruby -S rake $argv
+    command rake $argv
+  end
+end
+
+function rake
+  if test -S .zeus.sock
+    command zeus rake $argv
+  else
+    __bundle_aware_rake $argv
   end
 end
