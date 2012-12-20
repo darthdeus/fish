@@ -33,6 +33,7 @@ function gmf  ; git merge --ff-only $argv   ; end
 function gch  ; git cherry-pick $argv       ; end
 
 complete -f -c gco -a "(git branch -a | tr -s ' ' | cut -d ' ' -f 2)"
+complete -f -c gb  -a "(git branch | tr -s ' ' | cut -d ' ' -f 2)"
 
 # log
 function gl   ; glog --graph $argv ; end
