@@ -34,6 +34,9 @@ function gch  ; git cherry-pick $argv       ; end
 
 complete -f -c gco -a "(git branch -a | tr -s ' ' | cut -d ' ' -f 2)"
 complete -f -c gb  -a "(git branch | tr -s ' ' | cut -d ' ' -f 2)"
+complete -f -c gp  -a "(git branch | tr -s ' ' | cut -d ' ' -f 2)"
+complete -f -c gm  -a "(git branch | tr -s ' ' | cut -d ' ' -f 2)"
+complete -f -c gmf -a "(git branch | tr -s ' ' | cut -d ' ' -f 2)"
 
 function p; powder $argv; end
 
