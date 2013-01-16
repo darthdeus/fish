@@ -48,6 +48,8 @@ end
 function gla  ; gl --all $argv     ; end
 
 
+function kc; kviberg-config $argv; end
+
 function b
   bundle $argv
 end
