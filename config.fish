@@ -1,4 +1,4 @@
-set -x PATH /usr/local/bin /usr/local/opt/rbenv/bin /usr/local/sbin $HOME/.rbenv/shims /usr/local/share/npm/bin/ $PATH
+set -x PATH /usr/local/bin /usr/local/opt/rbenv/bin /usr/local/sbin $HOME/.rbenv/shims /usr/local/share/npm/bin/ /usr/local/share/python3/ $PATH
 set -xg EDITOR vim
 
 set -xg GOROOT /usr/local/opt/go
